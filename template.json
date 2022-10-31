@@ -364,8 +364,8 @@
           "arn:aws:iam::aws:policy/AWSCodeBuildAdminAccess",
           "arn:aws:iam::aws:policy/AWSCodeDeployFullAccess",
           "arn:aws:iam::aws:policy/AWSCodePipelineFullAccess",
-          "arn:aws:iam::aws:policy/AWSElasticBeanstalkFullAccess",
-          "arn:aws:iam::aws:policy/AWSLambdaFullAccess",
+          "arn:aws:iam::aws:policy/AdministratorAccess-AWSElasticBeanstalk",
+          "arn:aws:iam::aws:policy/AWSLambda_FullAccess",
           "arn:aws:iam::aws:policy/AWSCodeStarFullAccess",
           "arn:aws:iam::aws:policy/CloudWatchEventsFullAccess",
           "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
@@ -381,7 +381,7 @@
                     "kms:*",
                     "codecommit:*",
                     "codedeploy:*",
-                    "s:*",
+                    "s3:*",
                     "elasticbeanstalk:*",
                     "ec2:*",
                     "elasticloadbalancing:*",
@@ -394,8 +394,8 @@
                     "rds:*",
                     "ecs:*",
                     "dynamodb:*",
-                    "iam:PassRole"
-
+                    "iam:PassRole",
+                    "logs:*"
                   ],
                   "Effect": "Allow",
                   "Resource": "*"
