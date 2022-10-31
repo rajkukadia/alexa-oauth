@@ -10,14 +10,13 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBScanExpression;
 import com.oauth.server.dto.OAuthPartner;
 import java.util.List;
 import lombok.NonNull;
-import lombok.extern.log4j.Log4j2;
 
 /**
  * A DAO to access {@link OAuthPartner} in DynamoDB.
  *
  * @author Lucun Cai
  */
-@Log4j2
+//@Log4j2
 public class DynamoDBPartnerDetailsDAO {
 
     private DynamoDBMapper dynamoDBMapper;
@@ -62,7 +61,7 @@ public class DynamoDBPartnerDetailsDAO {
     public void deletePartnerByPartnerId(@NonNull String partnerId) {
         OAuthPartner partner = dynamoDBMapper.load(OAuthPartner.class, partnerId);
         if (partner == null) {
-            log.error("partner {} already deleted.", partnerId);
+            //log.error("partner {} already deleted.", partnerId);
         } else {
             dynamoDBMapper.delete(partner);
         }

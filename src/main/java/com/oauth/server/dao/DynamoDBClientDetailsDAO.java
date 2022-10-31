@@ -16,7 +16,6 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.log4j.Log4j2;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.provider.ClientAlreadyExistsException;
 import org.springframework.security.oauth2.provider.ClientDetails;
@@ -32,7 +31,7 @@ import org.springframework.util.StringUtils;
  * @author Lucun Cai
  */
 @RequiredArgsConstructor
-@Log4j2
+//@Log4j2
 public class DynamoDBClientDetailsDAO implements ClientDetailsService, ClientRegistrationService {
 
     private final DynamoDBMapper dynamoDBMapper;
@@ -152,7 +151,7 @@ public class DynamoDBClientDetailsDAO implements ClientDetailsService, ClientReg
         OAuthClientDetails oAuthClientDetails = dynamoDBMapper.load(OAuthClientDetails.class, clientId);
 
         if (oAuthClientDetails == null) {
-            log.error("clientId {} already deleted.", clientId);
+            //log.error("clientId {} already deleted.", clientId);
         } else {
             dynamoDBMapper.delete(oAuthClientDetails);
         }
