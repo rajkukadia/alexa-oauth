@@ -4,7 +4,8 @@
   "Parameters": {
     "RepositoryName": {
       "Description": "enter the name of your GitHub source repository",
-      "Type": "String"
+      "Type": "String",
+      "Default": "alexa-oauth"
     },
     "BranchName": {
       "Description": "enter the repository branch",
@@ -13,12 +14,14 @@
     },
     "GitHubOwner": {
       "Description": "enter the GitHub owner of the repository",
-      "Type": "String"
+      "Type": "String",
+      "Default": "rajkukadia"
     },
     "GitHubOAuthToken": {
       "Description": "enter the personal access key for your GitHub repository",
       "Type": "String",
-      "NoEcho": true
+      "NoEcho": true,
+      "Default": "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"
     },
     "VpcId": {
       "Type": "AWS::EC2::VPC::Id"
@@ -26,7 +29,7 @@
     "ElasticBeanstalkPlatform": {
       "Description": "enter the latest Java SE version in https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html#platforms-supported.javase",
       "Type": "String",
-      "Default": "64bit Amazon Linux 2 v4.3.0 running Tomcat 8.5 Corretto 8"
+      "Default": "64bit Amazon Linux 2 v3.4.0 running Corretto 8"
     }
   },
   "Resources": {
