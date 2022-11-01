@@ -457,7 +457,7 @@
         },
         "Environment": {
           "ComputeType": "small",
-          "Image": "aws/codebuild/eb-java-8-amazonlinux-64:2.4.3",
+          "Image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
           "Type": "LINUX_CONTAINER"
         },
         "ServiceRole": {
