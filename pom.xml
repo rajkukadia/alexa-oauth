@@ -6,7 +6,7 @@
 
     <groupId>com.alexa.oauth</groupId>
     <artifactId>alexa-oauth</artifactId>
-    <version>1.1</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>alexa-oauth</name>
@@ -98,26 +98,7 @@
             <artifactId>aws-java-sdk</artifactId>
             <version>1.11.549</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
-        <dependency>
-            <groupId>javax.xml.bind</groupId>
-            <artifactId>jaxb-api</artifactId>
-            <version>2.3.1</version>
-        </dependency>
 
-        <!-- https://mvnrepository.com/artifact/javax.activation/activation -->
-        <dependency>
-            <groupId>javax.activation</groupId>
-            <artifactId>activation</artifactId>
-            <version>1.1</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime -->
-<!--        <dependency>-->
-<!--            <groupId>org.glassfish.jaxb</groupId>-->
-<!--            <artifactId>jaxb-runtime</artifactId>-->
-<!--            <version>4.0.0</version>-->
-<!--        </dependency>-->
     </dependencies>
 
     <dependencyManagement>
